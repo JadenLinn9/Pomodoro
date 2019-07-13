@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+TC:400,500,700,900&display=swap&subset=chinese-traditional" rel="stylesheet"> 
+	<style type="text/css">
+	   body {
+	   	    font-family: 'Lato','Noto Sans TC', sans-serif;
+        	min-width: 1280px;
+        	margin: 0 auto;
+
+
+	   }
+
+	   	   .container1 {
+	   	width: 660px;
+	   	margin: 0 auto;
+	   	margin-top: -10px;
+	   }
+
+	   .container2 {
+	   	width: 996px;
+	   	margin: 0 auto;
+	   	padding: 0;
+	   }
+
+	   	   .icons1 {
+	   	position: relative;
+	   	top: 5px;
+	   	padding-right: 5px;
+	   }
+
+
+     /*****section 1*****/
+	   #clock {
+	   	padding-top: 46px;
+	   	background-color: #FFFAE0;
+	   	/*max-height: 800px;*/
+	   }
+
+	   #clock1 {
+	   	background: #ffffff;
+	   	border-radius: 330px 330px 0 0;
+        border-right: 30px solid #FF7352;
+        border-left: 30px solid #FF7352;
+        border-top: 30px solid #FF7352;
+        border-bottom: : 0px;
+	   	height: 330px;
+	   	width: 660px;
+	   		   }
+
+	   #count {
+	   	font-weight: 700;
+	   	font-size: 120px;
+	   	position: relative;
+	   	left: 115px;
+	   	top: 90px;
+	   }
+
+	   #start {
+	   	position: relative;
+	   	top: 75px;
+	   	left: 200px;
+	   	font-size: 21px;
+	   	color: white;
+	   	background-color: #FF7352;
+	   	width: 158px;
+	   	height: 36px;
+	   	border-radius: 18px;
+	   	line-height: 21px;
+	   }
+	   
+	   #icon1 {
+	   	position: relative;
+	   	top: 90px;
+	   	left: 210px;
+	   	font-size: 36px;
+	   	color: #D1D1D1;
+	   }
+     /*****section 2*****/
+     	   .title1 {
+	   	font-size: 24px;
+	   	margin-top: 40px;
+	   }
+
+	   	   	   .now {
+	   	font-size: 21px;
+	   }
+
+	   	   .dotGroup {
+	   	margin-top: -20px;
+	   	margin-left: 30px;
+	   }
+	   	   .dot {
+	   	font-size: 12px;
+	   }
+
+	   .title2 {
+	   	font-size: 24px;
+	   	margin-top: 40px;
+	   	color: #d1d1d1;
+	   }
+
+	   .toDo {
+	   	font-size: 21px;
+	   	color: #d1d1d1;
+	   }
+
+	   .addBtn {
+	   	font-size: 21px;
+	   	color: #FF7352;
+	   	display: flex;
+		position: relative;
+	   	top: 5px;
+	   	padding-right: 5px;
+	   	margin-bottom: 21px;
+	   	margin-top: 15px;
+	   }
+
+	   .videoBtn {
+	   	background: red;
+	   	justify-content: flex-end;
+
+	   }
+
+	   hr {
+	   	margin-top: -10px;
+	   }
+       
+       .moreBtn {
+       	 float: right;
+       	 margin-right: 140px;
+       	 text-align: center;
+       	 color: #D1D1D1;
+       	 font-size: 21px;
+       	 font-weight: 600;
+       }
+
+     /*****section 3*****/
+	   .now {
+	   	font-size: 21px;
+	   }
+
+	   .footBtn {
+	   	font-size: 36px;
+	   	color: white;
+	   	padding-top: 24px;
+	   	padding-right: 24px;
+	   	padding-left: 24px;
+        float: right;
+        display: inline-block;
+	   }
+
+	   .footBtn:hover {
+	   	height: 80px;
+	   	color: #FF7352;
+	   	background: #ffffff;
+	   }
+
+	   .logo {
+	   	color: white;
+	   	font-size: 34px;
+	   	font-weight: bold;
+	   }
+
+ul {
+  list-style-type: none;
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+  background-color: #FF7352;
+  margin-bottom: -16px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  /*padding: 14px;*/
+  text-decoration: none;
+}
+
+	</style>
+</head>
+<body>
+	<section id="clock">
+		<div class="container" id="clock1">
+		<h1 id="count">25:00<br></h1>
+		<div style="display: inline"><button type="button" class="btn" id="start">START</button> 
+		<i class="material-icons" id="icon1">highlight_off</i></div>
+</div>
+
+		
+	</section>
+	<section id="list">
+		<div class="container1">
+		<p class="title1"><b>THE MISSION TODAY</b></p>
+		<hr>
+		<p class="now"><i class="material-icons icons1">panorama_fish_eye
+</i>第一件待辦事項是做一個蕃茄鐘</p>
+<div class="dotGroup">
+         <i class="material-icons dot">fiber_manual_record</i>
+         <i class="material-icons dot">fiber_manual_record</i>
+         <i class="material-icons dot">fiber_manual_record</i>
+         <i class="material-icons dot">fiber_manual_record</i>
+         <i class="material-icons dot">trip_origin</i>
+</div></div>
+<div  class="moreBtn"><i class="material-icons">
+arrow_forward_ios
+</i><br>MORE</div>
+        <div class="container1">
+		<p class="title2"><b>UP COMING MISSION</b></p>
+		<hr>
+		<div class="toDo"  style="display: flex;float: left"><i class="material-icons icons1">panorama_fish_eye</i>第二件待辦事項是再做一個蕃茄鐘</p></div>
+<div class="toDo" style="display: flex;float: right"><i class="material-icons">play_circle_filled</i></div>
+
+<div style="clear: both;"></div>
+
+		<p class="addBtn">
+			<i class="material-icons icons1">add_circle_outline</i><b>ADD ITEM</b></p>
+	</div></div>
+</section>
+	<section>
+		<ul><div class="container2">
+  <li><a href="#contact" class="logo">POMODORO</a></li>
+  <li style="float:right"><a class="active" href="#about"><i class="material-icons footBtn">list_alt</i></a></li>
+  <li style="float:right"><a class="active" href="#about"><i class="material-icons footBtn">bar_chart</i></a></li>
+  <li style="float:right"><a class="active" href="#about"><i class="material-icons footBtn">music_note</i></a></li>
+</ul></div>
+	</section>
+
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script>
+		$('#start').on('click',function(){
+			$('#start').css('background','#d1d1d1');
+			$('#start').text('PAUSE');
+	       $(function(){
+    var min =24;
+    var sec =59;
+   var a = setInterval(function(){
+        if(sec<10){
+            $('#count').html(min+':0'+sec);
+        }else{
+            $('#count').html(min+':'+sec);
+        }
+        sec--;
+        if(sec<0){
+            sec=59;
+            min--;
+        }
+        if(min<0){clear();}
+    },1000)
+   
+    function clear(){
+        clearInterval(a);
+    }
+})
+
+		});
+
+	</script>
+
+</body>
+</html>
