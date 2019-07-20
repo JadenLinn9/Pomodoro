@@ -63,6 +63,26 @@
 	   	border-radius: 18px;
 	   	line-height: 21px;
 	   }
+
+	   #comfirm {
+	   	font-size: 21px;
+	   	color: #FF7352;
+	   	background-color: white;
+	   	width: 158px;
+	   	height: 36px;
+	   	border-radius: 18px;
+	   	line-height: 21px;
+	   	border:1px solid #FF7352;
+	   	margin-top: 20px;
+	   	margin-bottom: 20px;
+	   	position: relative;
+     	left:250px;
+	   }
+
+	   #comfirm:hover {
+	   	background-color: #FF7352;
+	   	color: white;
+	   }
 	   
 	   #icon1 {
 	   	position: relative;
@@ -82,9 +102,6 @@
 	   	   .dotGroup {
 	   	margin-top: -20px;
 	   	margin-left: 30px;
-	   }
-	   	   .dot {
-	   	font-size: 12px;
 	   }
 	   .title2 {
 	   	font-size: 24px;
@@ -169,6 +186,21 @@ li a {
   margin-bottom: -16px;
 }
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.lis {
+	line-height: 24px;
+	height: 24px;
+	position: relative;
+	top: 5px;
+	padding-right: 10px;
+}
+
+
+
 	</style>
 }
 </head>
@@ -177,7 +209,7 @@ li a {
 		<div class="container" id="clock1">
 		<h1 id="count">25:00<br></h1>
 		<div style="display: inline"><button type="button" class="btn" id="start">START</button> 
-		<i class="material-icons" id="icon1">highlight_off</i>Defult</div>
+		<i class="material-icons" id="icon1">highlight_off</i></div>
 </div>
 
 		
@@ -186,11 +218,35 @@ li a {
 		<div class="container1">
 		<p class="title1"><b>RINGTONE</b></p>
 		<hr>
-        <div class="item"><i class="material-icons">fiber_manual_record</i>Default</div>
-        <div class="item"><i class="material-icons">fiber_manual_record</i>Default</div>
-        <div class="item"><i class="material-icons">fiber_manual_record</i>Default</div>
-        
-		
+		<div class="flex">
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Default</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Sea</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Flute</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Digital</div>
+
+		</div>
+				<div class="flex">
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Default</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Sea</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Flute</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Digital</div>
+
+		</div>
+				<div class="flex">
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Default</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Sea</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Flute</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Digital</div>
+
+		</div>
+				<div class="flex">
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Default</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Sea</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Flute</div>
+        <div class="item"><i class="material-icons lis">panorama_fish_eye</i>Digital</div>
+
+		</div>
+		<button type="button" class="btn" id="comfirm">COMFIRM</button> 
 </div>
        
 </section>
